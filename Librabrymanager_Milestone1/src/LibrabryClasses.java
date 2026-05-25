@@ -31,23 +31,23 @@ class Sach {
     }
 
     public void nhapBook(Scanner sc) {
-        System.out.println(" Nhap Thong Tin Sach ");
-        System.out.print("Nhap ID: ");
+        System.out.println(" Enter book information: ");
+        System.out.print("Enter ID: ");
         bookID = sc.nextInt();
         sc.nextLine();
 
-        System.out.print("Nhap ten sach: ");
+        System.out.print(" Enter book name: ");
         title = sc.nextLine();
 
-        System.out.print("Nhap tac gia: ");
+        System.out.print("Enter author: ");
         author = sc.nextLine();
 
-        System.out.print("Nhap the loai: ");
+        System.out.print("Enter category: ");
         category = sc.nextLine();
     }
 
     public void xuatBook() {
-        System.out.println("[ID: " + bookID + " | Ten: " + title + " | Tac gia: " + author + " | The loai: " + category + "]");
+        System.out.println("[ID: " + bookID + " | Name: " + title + " | Author: " + author + " | Category: " + category + "]");
     }
 public void updateBook(Scanner sc) {
         System.out.println("\nWhat do you want to update? 1. Update Title | 2. Update Author | 3. Update Category");
